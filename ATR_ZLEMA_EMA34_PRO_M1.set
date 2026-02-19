@@ -1,0 +1,46 @@
+; ATR ZLEMA + EMA34 PRO v2.0
+; Settings File — Timeframe: M1 (XAUUSD Scalping Ultra-Fast)
+; Author  : M4DI~UciH4 | github.com/RizkyEvory
+; Notes   : Optimized for M1 scalping. ATR Mult lebih kecil agar trail
+;           lebih ketat. Noise threshold diturunkan agar ZLEMA responsif.
+;           MTF dikonfirmasi dari M5. EMA Mode A untuk entry cepat.
+; -----------------------------------------------------------------------
+
+; ════ ATR ZLEMA Core ════
+InpSource=1
+InpZlemaLen=7
+InpAtrLen=7
+InpAtrMult=2.0
+InpNoiseEnable=1
+InpNoiseThr=0.15
+
+; ════ EMA34 Filter ════
+InpEmaLen=21
+InpEmaMode=0
+
+; ════ MTF Confirmation ════
+InpMTFEnable=1
+InpMTFTF=2
+
+; ════ Visuals — Rainbow ════
+InpPreset=5
+InpBullCustom=65280
+InpBearCustom=255
+InpCloudTransp=80
+InpBarTransp=70
+InpBarColor=1
+InpZlemaWid=2
+InpTrailWid=2
+
+; ════ Visuals — Signals ════
+InpShowSig=1
+InpShowGlow=1
+InpShowEMA=1
+InpShowCloud=1
+
+; ════ Dashboard ════
+InpShowDash=1
+InpDashCorner=0
+InpDashX=10
+InpDashY=25
+InpFontSz=9
